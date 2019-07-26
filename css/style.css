@@ -1,0 +1,48 @@
+.mainContainer{
+
+}
+.searchBox{
+    font-size: 30px;
+    text-align: center;
+}
+input {
+    width: 20%;
+    height: 25px;
+    background-color: lightgrey;
+}
+.heading{
+    width: 23%;
+    /* border: 2px solid black; */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    margin: 0 auto;
+    /* background-color: lightgrey; */
+}
+th,td{
+    border: solid 1px black;
+    border-collapse: collapse;
+    padding:10px;
+    text-align: center;
+}
+table{
+    border: solid 1px black;
+    border-collapse: collapse;
+    padding:10px;
+    width: 40%;
+    margin: 0 auto;
+}
+
+table tr:nth-child(even) {
+    background-color:burlywood;
+  }
+
+table tr:nth-child(odd) {
+    background-color: violet;
+   }
+
+table th {
+    background-color: black;
+    color: white;
+}
+

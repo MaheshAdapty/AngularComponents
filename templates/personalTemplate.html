@@ -1,0 +1,71 @@
+ 
+<!-- <p>{{  personalCtrl.academicData}}</p> -->
+ <!-- <p>{{ personalCtrl.studentInformation }}</p> -->
+<div class = "searchBox">
+        Enter Student Id:<input type = "text"  ng-model = "searchStudent">
+</div>
+
+    <div class = "mainContainer">
+            <div class = "heading">
+             <h2>Personal Record</h2> 
+            </div> 
+             <table>
+                 <tr>
+                     <th>Id</th>
+                     <th>First Name</th>
+                     <th>Last Name</th>
+                     <th>City</th>
+                     <th>Marks</th>
+                     <th>Grade</th>
+                 </tr>
+                
+            
+             <!-- here we are useing inbuild filter named filter -->
+                  <tr ng-repeat = "student in personalCtrl.studentInformation
+                  |  filter: { id : personalCtrl.studentId }">    
+                     <td>{{student.id }}</td>
+                     <td>{{student.fname | uppercase}}</td>
+                     <td>{{student.lname  }}</td>
+                     <td>{{student.city}}</td>
+                     <td>{{student.mark}}</td>
+                     <td>{{student.grade}}</td>
+                 </tr>
+             </table>
+         
+             <div class = "heading">
+                 <h2>Academic Record</h2>
+             </div> 
+            
+             <table>
+                     <tr>
+                         <th>Id</th>
+                         <th>Marks</th>
+                         <th>Grade</th>
+                     </tr>
+              
+             <!-- here we are useing inbuild filter named filter -->
+                      <tr ng-repeat = "student in  personalCtrl.academicData 
+                      |  filter: { id : personalCtrl.studentId }">  
+                         <td>{{student.id }}</td>
+                         <td>{{student.mark }}</td>
+                         <td>{{student.grade }}</td>
+                     </tr>
+             </table>
+         </div>
+                
+         
+                 
+                 
+ 
+
+
+ 
+
+ 
+
+  
+
+
+
+  
+

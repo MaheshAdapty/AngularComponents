@@ -1,0 +1,29 @@
+{
+	"studentPersonal" :[
+		{
+			"id"    : "101",
+			"fname" : "Mahesh",
+			"lname" : "Londhe",
+			"city"  : "Thane"
+			
+		},
+		{
+			"id"    : "102",
+			"fname" : "Niranjan",
+			"lname" : "Kv",
+			"city"  : "Kerala"
+		},
+		{
+			"id"    : "103",
+			"fname" : "Tejas",
+			"lname" : "Donga",
+			"city"  : "Andhra Pradesh"
+		},
+		{
+			"id"    : "104",
+			"fname" : "Arush",
+			"lname" : "Shrivastava",
+			"city"  : "Thane"
+		}
+	]
+}
